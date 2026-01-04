@@ -1,24 +1,47 @@
-# Wholesale Customer Clustering
+# Wholesale Customer Clustering (KMeans & DBSCAN)
 
-This project performs clustering analysis using KMeans and DBSCAN on the Wholesale customers dataset. It includes:
+Clustering analysis of wholesale customer spending data using **KMeans** and **DBSCAN**.
+Pipeline includes outlier removal, standardization, elbow method, PCA visualization, and clustering metrics. :contentReference[oaicite:6]{index=6}
 
-- Outlier removal using IQR
-- Data standardization
-- KMeans clustering with elbow method
-- DBSCAN clustering
-- PCA-based cluster visualization
-- Accuracy and metrics evaluation against known labels
+## What’s inside
+- Outlier removal using IQR :contentReference[oaicite:7]{index=7}
+- Feature standardization :contentReference[oaicite:8]{index=8}
+- KMeans clustering + elbow method :contentReference[oaicite:9]{index=9}
+- DBSCAN clustering :contentReference[oaicite:10]{index=10}
+- PCA visualization for clusters :contentReference[oaicite:11]{index=11}
+- Clustering evaluation metrics (recommended: Silhouette / Davies–Bouldin / Calinski–Harabasz)
 
-## 📁 Files
+> Repo currently contains a main script and the dataset file referenced in the original README. :contentReference[oaicite:12]{index=12}
 
-- `script.py` - Main clustering script
-- `Wholesale customers data.csv` - Input dataset
-- `requirements.txt` - Python dependencies
-- `README.md` - Project documentation
+---
+
+## Project Structure (recommended)
+```text
+.
+├── data/
+│   └── wholesale_customers.csv
+├── notebooks/
+│   └── 01_wholesale_clustering.ipynb
+├── scripts/
+│   └── cluster.py
+├── assets/
+│   └── (plots / screenshots)
+├── requirements.txt
+├── .gitignore
+├── LICENSE
+└── README.md
 
 ## ▶️ How to Run
 
-1. Clone the repository or download the folder.
-2. Install dependencies:
-   ```bash
+1. Clone the repository 
+   git clone https://github.com/Amr-Belal-77/Wholesale_clustering.git
+   cd Wholesale_clustering
+
+2. Install.
    pip install -r requirements.txt
+
+3. Run the script
+   python scripts/cluster.py
+
+
+
